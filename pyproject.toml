@@ -1,0 +1,22 @@
+[project]
+name = "rag-api"
+version = "0.1.0"
+description = "Minimal RAG API prototype using FastAPI + TF-IDF"
+authors = [{ name="serhii", email="lightnessofbein@gmail.com" }]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-docx",
+    "pdfplumber",
+    "scikit-learn",
+    "pytest",
+    "python-multipart>=0.0.20",
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
